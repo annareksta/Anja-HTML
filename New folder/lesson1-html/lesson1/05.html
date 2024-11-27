@@ -1,0 +1,91 @@
+<!-- Основная структура HTML-документа -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- for browser -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
+  <body>
+    <!-- for users -->
+    <div class="wrapper">
+      <!-- Верхнее меню -->
+      <header class="main-header">
+        <nav>
+          <ul>
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#experience">Опыт</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Первая секция: Приветствие -->
+      <section id="home" class="bg-gray">
+        <div class="main-slider container">
+          <div class="main-slider-text">
+            <h1>Привет! Я - веб-разработчик</h1>
+            <p>Создаю красивые и функциональные веб-сайты</p>
+          </div>
+
+          <div class="main-slider-image">
+            <img src="avatar.jpg" alt="Изображение разработчика" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Вторая секция: Обо мне -->
+      <section id="about" class="about container">
+        <div class="about-image">
+          <img src="space.webp" alt="Обо мне" />
+        </div>
+
+        <div class="about-text">
+          <h2>Обо мне</h2>
+
+          <p>
+            Я увлечен веб-разработкой и постоянно совершенствую свои навыки.
+          </p>
+
+          <div class="social-links">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="#">Twitter</a>
+          </div>
+
+          <p>
+            Увлеченный разработчик с опытом работы в современных технологиях
+            веб-разработки.
+          </p>
+        </div>
+      </section>
+
+      <!-- Третья секция: Мой опыт -->
+      <section id="experience" class="bg-experience">
+        <div class="experience container">
+          <h2>Мой опыт</h2>
+
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="push"></div>
+    </div>
+
+    <!-- Футер -->
+    <footer class="footer">
+      <p>
+        &copy; 2024 Мое Имя | <a href="#privacy">Privacy</a> |
+        <a href="mailto:email@example.com">email@example.com</a>
+      </p>
+    </footer>
+  </body>
+</html>
