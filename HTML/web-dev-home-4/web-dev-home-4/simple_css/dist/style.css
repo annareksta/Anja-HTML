@@ -21,6 +21,30 @@ h3 {
   margin: 0 auto;
   padding: 0 20px;
 }
+/* Media */
+@media (max-width: 768px) {
+  .three-column-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-container {
+    margin-right: 0;
+    width: 100px;
+    height: 100px;
+  }
+
+  .footer-bottom {
+    height: auto;
+    padding: 20px 10px;
+  }
+}
+
 /* Header Section */
 .header {
   background-color: #3295ff;
@@ -132,4 +156,121 @@ h3 {
   width: 100%;
   min-width: 200px;
   height: 150px;
+}
+
+/* Homework Section */
+
+/* Image+text section */
+
+.text-image-section {
+  
+  margin-top: 20px;
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  padding: 20px;
+}
+
+.text-content {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.image-content img {
+  width: 200px;
+  height: 200px;
+  overflow: hidden; 
+  position: relative;
+  border-radius: 50%;
+}
+.square-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center; 
+}
+
+/* Three-column section */
+
+
+.three-column-section {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.column {
+  flex: 1;
+  text-align: center;
+}
+
+.column-image {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.column h3 {
+  font-size: 0.7em;
+  margin: 10px 0;
+}
+
+.column p {
+  font-size: 1em;
+  color: #666;
+}
+
+.footer {
+  background-color: #0056b3;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.footer div.column h4 {
+  text-align: left;
+
+}
+.footer div.column ul {
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.footer div.column ul li a {
+  color: #fff;
+  text-decoration: none;
+
+}
+.logo-container {
+  margin-right: 200px;
+  width: 150px;
+  height: 150px;
+  background-color: #61caff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo-text {
+  font-size: 20px;
+  color: white; 
+  font-weight: bold; 
+}
+.footer-bottom {
+  height: 50px;
+  text-align: center;
+  justify-items: center;
+  padding: 10px;
 }
